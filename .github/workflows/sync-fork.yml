@@ -39,7 +39,7 @@ jobs:
       with:
         target_sync_branch: release
         # REQUIRED 'target_repo_token' exactly like this!
-        # target_repo_token: ${{ secrets.GITHUB_TOKEN }}
+        target_repo_token: ${{ secrets.GITHUB_TOKEN }}
         upstream_sync_branch: release
         upstream_sync_repo: 666OS/rules
         # upstream_repo_access_token: ${{ secrets.UPSTREAM_REPO_SECRET }}
