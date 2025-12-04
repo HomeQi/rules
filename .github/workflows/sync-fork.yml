@@ -35,7 +35,7 @@ jobs:
     # Step 2: run the sync action
     - name: Sync upstream changes
       id: sync
-      uses: 666OS/rules
+      uses: 666OS/rules@release
       with:
         target_sync_branch: release
         # REQUIRED 'target_repo_token' exactly like this!
