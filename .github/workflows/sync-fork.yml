@@ -35,13 +35,13 @@ jobs:
     # Step 2: run the sync action
     - name: Sync upstream changes
       id: sync
-      uses: 666OS/rules@release
+      uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
       with:
         target_sync_branch: release
         # REQUIRED 'target_repo_token' exactly like this!
         # target_repo_token: ${{ secrets.GITHUB_TOKEN }}
         upstream_sync_branch: release
-        upstream_sync_repo: HomeQi/rules
+        upstream_sync_repo: 666OS/rules
         # upstream_repo_access_token: ${{ secrets.UPSTREAM_REPO_SECRET }}
 
         # Set test_mode true during manual dispatch to run tests instead of the true action!!
